@@ -47,7 +47,7 @@ def calculate_distance(vec1, vec2, norm_type="Евклідова"):
         return np.sum(np.abs(vec1 - vec2))
 
 app.layout = html.Div([
-    html.H1("🧠 Розпізнавання Образів (Plotly Dash)", style={'textAlign': 'center', 'fontFamily': 'Arial'}),
+    html.H1("Розпізнавання Образів", style={'textAlign': 'center', 'fontFamily': 'Arial'}),
     
     dcc.Tabs(id="tabs-tasks", value='tab-1', children=[
         dcc.Tab(label='Завдання 1: Вектори ознак', value='tab-1'),
